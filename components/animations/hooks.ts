@@ -1,11 +1,15 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useLayoutEffect, useState } from 'react';
 
 export const useReducedMotion = () => {
-  const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
+  const [prefersReducedMotion, setPrefersReducedMotion] = useState(() => {
+    if (typeof window !== 'undefined') {
+      return window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    }
+    return false;
+  });
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
-    setPrefersReducedMotion(mediaQuery.matches);
 
     const handleChange = (event: MediaQueryListEvent) => {
       setPrefersReducedMotion(event.matches);
@@ -19,7 +23,7 @@ export const useReducedMotion = () => {
 };
 
 export const useGSAP = () => {
-  const [GSAP, setGSAP] = useState<any>(null);
+  const [GSAP, setGSAP] = useState<typeof import('gsap').default | null>(null);
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {

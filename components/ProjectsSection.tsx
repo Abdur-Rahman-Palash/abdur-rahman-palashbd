@@ -1,7 +1,6 @@
 import React from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
-import { Project, ProjectsSectionProps } from '@/lib/types';
+import { ProjectsSectionProps } from '@/lib/types';
 import ProjectFilters from './ProjectFilters';
 import ProjectCard from './ProjectCard';
 

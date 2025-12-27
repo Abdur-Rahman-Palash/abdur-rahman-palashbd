@@ -47,7 +47,7 @@ export const useSlideIn = (direction: 'left' | 'right' | 'up' | 'down' = 'up', o
 
     const { duration = 1, delay = 0, trigger = true } = options;
 
-    const fromVars: any = { opacity: 0 };
+    const fromVars: Record<string, number | string> = { opacity: 0 };
     switch (direction) {
       case 'left':
         fromVars.x = -50;

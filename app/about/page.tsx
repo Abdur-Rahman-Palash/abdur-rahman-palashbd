@@ -2,7 +2,6 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import Image from 'next/image';
 import Link from 'next/link';
 
 const AboutPage = () => {
@@ -85,9 +84,9 @@ const AboutPage = () => {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="space-y-6"
             >
-              <h2 className="text-3xl font-bold text-foreground">Hello, I'm Abdur Rahman Palash</h2>
+              <h2 className="text-3xl font-bold text-foreground">Hello, I&apos;m Abdur Rahman Palash</h2>
               <p className="text-lg text-text-muted leading-relaxed">
-                I'm a passionate Full-Stack Developer and UI/UX Designer with over 3 years of experience
+                I&apos;m a passionate Full-Stack Developer and UI/UX Designer with over 3 years of experience
                 creating digital solutions that make a difference. I specialize in modern web technologies
                 and love bringing creative ideas to life through clean, efficient code.
               </p>

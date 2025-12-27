@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { getPostBySlug, getPostSlugs, getAllPosts } from '../../../lib/blog';
+import { getPostBySlug, getPostSlugs } from '../../../lib/blog';
 
 interface BlogPostPageProps {
   params: {

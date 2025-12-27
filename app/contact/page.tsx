@@ -16,7 +16,7 @@ export default function ContactPage() {
             Get In Touch
           </h1>
           <p className="text-lg sm:text-xl text-text-muted max-w-2xl mx-auto">
-            Have a project in mind or just want to say hello? I'd love to hear from you.
+            Have a project in mind or just want to say hello? I&apos;d love to hear from you.
           </p>
         </div>
 
@@ -25,10 +25,10 @@ export default function ContactPage() {
           <div className="space-y-8">
             <div>
               <h2 className="text-2xl font-bold text-foreground mb-4">
-                Let's Connect
+                Let&apos;s Connect
               </h2>
               <p className="text-text-muted mb-6">
-                I'm always interested in new opportunities, whether it's a full-time position,
+                I&apos;m always interested in new opportunities, whether it&apos;s a full-time position,
                 freelance project, or just a friendly chat about technology.
               </p>
             </div>
